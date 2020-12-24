@@ -1,5 +1,5 @@
 body {
-  background-image: url(); }
+  background-image: url("../../img/fondo.jpg"); }
 
 h3 {
   color: rgba(0, 0, 0, 0.74);
@@ -15,7 +15,6 @@ h3 {
     opacity: 1; } }
 
 p {
-  color: black;
   font-family: 'Kanit', sans-serif;
   font-size: 14pt;
   font-weight: 700; }
@@ -24,14 +23,52 @@ p {
   padding: 20px; }
 
 .encabezado__parrafo2 {
-  color: rgba(255, 255, 255, 0.74);
-  background-color: #315a47;
-  font-size: 15pt;
+  color: black;
+  background-color: #f2dcbb;
+  font-size: 30pt;
+  font-family: 'Italianno', cursive;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 3px black;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-weight: 100 !important;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 250px; }
+
+.textotituloempanada {
+  color: black;
+  background-color: #f2dcbb;
+  font-size: 30pt;
   font-weight: bold;
-  font-family: 'Kanit', sans-serif; }
+  font-family: 'Italianno', cursive;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 3px black;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  padding-top: 10px;
+  flex-wrap: wrap;
+  min-width: 250px; }
+
+.titulopizza {
+  color: black;
+  background-color: #f2dcbb;
+  font-size: 30pt;
+  font-weight: bold;
+  font-family: 'Italianno', cursive;
+  margin-top: 20px;
+  border: solid 3px black;
+  margin-left: 180px;
+  margin-right: 185px;
+  text-align: center;
+  padding-top: 10px; }
 
 ul {
-  color: red; }
+  color: black; }
 
 a:hover {
   color: white; }
@@ -40,35 +77,38 @@ li {
   color: black; }
 
 nav {
-  float: right; }
+  float: top;
+  display: flex;
+  height: 80px;
+  width: 100%; }
 
 nav ul {
   list-style: none;
   overflow: hidden; }
 
 nav ul li {
-  float: left;
+  position: relative;
   font-family: 'Kanit', sans-serif;
   font-size: 16px; }
 
 nav ul li a {
   display: inside block;
   padding: 15px;
-  color: #fff;
-  text-decoration: none; }
+  color: #2a9b3d !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f8f9fa !important; }
 
-nav ul li:hover {
-  background: #aa1e1e; }
+nav li:hover a {
+  color: #f23b26;
+  border-bottom: 2px solid red; }
 
 h6 {
   font-family: 'Kanit', sans-serif;
   font-size: 15px; }
 
-.redes {
-  color: black; }
-
 .contenedorTarjetas__quienesSomos {
-  background: #315a47;
+  background: #495464;
   height: 200px;
   width: auto;
   border: 5px solid #861f1f;
@@ -81,7 +121,7 @@ h6 {
   color: rgba(255, 255, 255, 0.74); }
 
 .contenedorTarjetas__elegirnos {
-  background: #315a47;
+  background: #495464;
   height: 200px;
   width: auto;
   border: 5px solid #861f1f;
@@ -101,46 +141,193 @@ h6 {
   grid-template-rows: 100px 1fr;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
-  grid-template-areas: "texto texto"
- "quienesSomos elegirnos"; }
+  grid-template-areas: "texto texto" "quienesSomos elegirnos"; }
 
 .contenedorTarjetas__texto {
-  color: rgba(255, 255, 255, 0.74);
-  border: 5px solid #861f1f;
+  color: black;
+  border: 3px solid black;
   padding-left: 15px;
   grid-area: texto;
-  background: #315a47;
-  animation-duration: 4s;
+  background: #f2dcbb;
+  animation-duration: 2s;
   animation-name: aparecer;
   text-align: center;
-  font-family: 'Kanit', sans-serif; }
+  font-family: 'Italianno', cursive;
+  padding-top: 10px; }
 
 footer {
-  margin-top: 20px;
-  padding: 20px;
+  height: auto;
+  padding: 50px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #2fa1c4, rgba(255, 127, 80, 0.884));
-  display: flex;
+  background-color: #ffffffc2;
   justify-content: space-between;
   font-family: 'Kanit', sans-serif; }
 
 .pizzalogo {
   width: 60px;
-  height: 60px; }
+  height: 60px;
+  display: flex;
+  position: relative;
+  float: right; }
+
+.container {
+  display: flex;
+  width: 80px; }
+
+.container-fluid1 {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 250px;
+  width: 80px; }
 
 .carousel-inner {
   height: 100vh; }
 
 .textoInfo__mail {
-  font-size: 20px;
-  font-weight: 10px; }
+  text-align: center;
+  font-family: 'Italianno', cursive;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 35px; }
+
+.textoInfo {
+  color: black;
+  background-color: #f2dcbb;
+  font-weight: bold;
+  font-family: 'Italianno', cursive;
+  margin-top: 20px;
+  border: solid 3px black;
+  margin-left: 180px;
+  margin-right: 185px;
+  text-align: center;
+  padding-top: 10px; }
 
 .tituloVenta, .tituloVenta--nuevo {
   border: 5px;
   font-family: 'Kanit', sans-serif; }
 
 .tituloVenta--nuevo {
-  color: red; }
+  color: black; }
+
+.tituloVenta__puntos {
+  text-align: center; }
+
+.tituloVenta__sucursales {
+  color: black;
+  background-color: #f2dcbb;
+  font-size: 30px;
+  font-family: 'Italianno', cursive;
+  margin-top: 20px;
+  border: solid 3px black;
+  margin-left: 180px;
+  margin-right: 185px;
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 250px; }
+
+.formula {
+  background-color: #f2dcbb;
+  border: black 3px solid;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: 300px;
+  width: 750px;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 30px; }
+
+.redes img {
+  width: 50px;
+  position: relative;
+  float: right;
+  top: -40px;
+  display: inline; }
+
+footer .redes {
+  position: relative;
+  flex-wrap: wrap;
+  min-width: 250px; }
+
+footer .mail {
+  text-align: center;
+  padding-right: 150px;
+  color: black; }
+
+footer .frase {
+  bottom: -40px;
+  position: relative;
+  float: left;
+  top: -0px;
+  color: black; }
+
+.pizzas {
+  border: black 3px solid;
+  margin-bottom: 100px;
+  margin-left: 180px;
+  background-color: #f2dcbb;
+  text-align: center; }
+
+h2 {
+  font-family: 'Italianno', cursive;
+  text-align: center;
+  font-size: 4rem !important; }
+
+.empanadas {
+  border: black 3px solid;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: #f2dcbb;
+  text-align: center; }
+
+.textoEmpanada {
+  color: black;
+  background-color: #f2dcbb;
+  font-size: 15pt;
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 3px black;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  padding-top: 15px; }
+
+.mapaycarta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; }
+
+.entrega {
+  background-color: white;
+  width: 530px;
+  margin-bottom: 5px; }
+
+.carouselslide {
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 180px;
+  transition: .5s; }
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 800px; }
+
+.carousel-inner {
+  height: 700px;
+  width: fit-content; }
+
+.textotituloempanada {
+  text-align: center; }
